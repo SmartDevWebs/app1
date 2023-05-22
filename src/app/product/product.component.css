@@ -1,0 +1,13 @@
+.divItem{
+    display: inline-block;
+    margin: 10px;
+}
+.itemImg{
+    height: 250px;
+    /* border-radius: 50%; */
+}
+.btnDetails,.btnBuy{
+    width: 120px;
+    margin: 3px;
+    /* display: inline-block; */
+}

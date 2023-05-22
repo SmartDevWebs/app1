@@ -1,0 +1,15 @@
+.divEmployee{
+    display: inline-block; 
+    margin: 5px;
+}
+.imgTeam{
+    height: 250px;
+    border-radius: 50%;
+}
+.btnDE{
+    width: 200px;
+    margin: 10px auto;
+}
+.card-title{
+    text-align: center;
+}

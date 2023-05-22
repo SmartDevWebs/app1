@@ -1,0 +1,14 @@
+button{
+    margin: 10px;
+    width: 100px;
+    /* background-color: black; */
+    color: azure;
+    border-radius: 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+    margin-top: 200px;
+}

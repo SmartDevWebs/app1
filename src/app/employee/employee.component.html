@@ -1,0 +1,38 @@
+<div class="divEmployee">
+    <div class="card" style="width: 16rem;">
+        <img [src]="img" class="card-img-top imgTeam" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{fname| uppercase}} {{lname|uppercase}}</h5>
+          <h5 class="card-title">{{dep|uppercase}}</h5>
+
+          <p class="card-text">Some quick example text the bulk of the card's content.</p>
+          <!-- <a href="#" class="btn btn-primary" (click)="showCounter()">Go More Details</a> -->
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark btnDE" data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal'+id">
+  Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" [id]="'exampleModal'+id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="exampleModalLabel">more info about : {{fname}} {{lname}} </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <b>Age : {{age}}</b><br>
+       <b>Phone : {{phone}}</b><br>
+       <b>Email : {{email}}</b><br>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
