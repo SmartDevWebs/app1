@@ -16,5 +16,8 @@ export class HomeComponent implements OnInit {
       this.router.navigate(['/login'])
     }
   }
-
+  displayNotification:boolean=false
+  closeNotification(){
+    this.displayNotification=true
+  }
 }

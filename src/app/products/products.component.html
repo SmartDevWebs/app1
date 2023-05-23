@@ -1,13 +1,28 @@
 <div class="container">
     <!-- <product></product> -->
-    <product *ngFor="let a of MyItems"
-    [name]="a.name"
-    [categ]="a.category"
-    [col]="a.color"
-    [avail]="a.available"
-    [price]="a.price"
-    [img]='a.image'
-    [id]="a.id"
-    ></product>
+    <filter
+    [all]="getTotalProductsLength()"
+    [tv]="getTotalTv()"
+    [laptop]="getTotalLaptop()"
+    [phone]="getTotalPhone()"
+    [refrigerator]="getTotalRef()"
+    [washmachine]="getTotalWashmachine()"
+    (filterRadioBtnSelectedChange)="productsRadioBtnChange($event)"
+    ></filter>
+    <!-- {{productsKindSelected}} -->
+    
+        <product *ngFor="let a of MyItems"
+        [name]="a.name"
+        [categ]="a.category"
+        [col]="a.color"
+        [avail]="a.available"
+        [price]="a.price"
+        [img]="a.image"
+        [id]="a.id"
+        >
+    <div ></div>
+    
+    </product>
+   
     
 </div>

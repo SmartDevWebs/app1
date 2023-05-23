@@ -1,0 +1,27 @@
+<div class="filterContainer">
+    <span><h4>Filter : </h4></span>
+    <input type="radio" name="filter" value="all" [(ngModel)]="selectedRadioBtnValue"
+    (change)="onRadioBtnSelectedChange()">
+    <span>{{'All('+all+')'}}</span>
+
+    <input type="radio" name="filter" value="phone" [(ngModel)]="selectedRadioBtnValue"
+    (change)="onRadioBtnSelectedChange()">
+    <span>{{'Phone('+phone+')'}}</span>
+
+    <input type="radio" name="filter" value="tv" [(ngModel)]="selectedRadioBtnValue"
+    (change)="onRadioBtnSelectedChange()">
+    <span>{{'Tv('+tv+')'}}</span>
+
+    <input type="radio" name="filter" value="laptop" [(ngModel)]="selectedRadioBtnValue"
+    (change)="onRadioBtnSelectedChange()">
+    <span>{{'Laptop('+laptop+')'}}</span>
+
+    <input type="radio" name="filter" value="refrigerator" [(ngModel)]="selectedRadioBtnValue"
+    (change)="onRadioBtnSelectedChange()">
+    <span>{{'Refrigerator('+refrigerator+')'}}</span>
+
+    <input type="radio" name="filter" value="washmachine" [(ngModel)]="selectedRadioBtnValue"
+    (change)="onRadioBtnSelectedChange()">
+    <span>{{'Washmachine('+washmachine+')'}}</span>
+    <!-- <span>{{selectedRadioBtnValue}}</span> -->
+</div>
