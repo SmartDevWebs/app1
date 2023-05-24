@@ -7,7 +7,7 @@ import { MyService } from '../my.service';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-@Input () name :string=''
+// @Input () name :string=''
 @Input () img:string=''
 @Input () id:number=0
 @Input () fname:string=''
@@ -16,6 +16,7 @@ export class EmployeeComponent implements OnInit {
 @Input () email:string=''
 @Input () phone:string=''
 @Input () age:number=0
+@Input () getSearchValueFromChild:string=''
 
 
 

@@ -1,4 +1,6 @@
-<div class="divEmployee">
+
+<div class="divEmployee" *ngIf="getSearchValueFromChild===''|| fname.toLowerCase().includes(getSearchValueFromChild)">
+  <!-- <h4>{{getSearchValueFromChild}}</h4> -->
     <div class="card" style="width: 16rem;">
         <img [src]="img" class="card-img-top imgTeam" alt="...">
         <div class="card-body">

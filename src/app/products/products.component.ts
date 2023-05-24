@@ -86,4 +86,7 @@ this.productsKindSelected=data
   getTotalRef(){
     return this.MyItems.filter(prod=>prod.category==='refrigerator').length
   }
+
+
+  
 }

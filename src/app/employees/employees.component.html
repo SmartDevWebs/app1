@@ -1,4 +1,7 @@
 <div class="container">
+    <search
+    (HandleClickSearch)="getHandleClickSearchValue($event)"></search>
+    <!-- <h5>{{getSearchValueFromChild}}</h5> -->
     <employee *ngFor="let rony of myEmployees"
     [img]="rony.pic"
     [id]="rony.id"
@@ -8,6 +11,7 @@
     [email]="rony.email"
     [phone]="rony.phone"
     [dep]="rony.dep"
+    [getSearchValueFromChild]="getSearchValueFromChild"
     ></employee>
 
 </div>

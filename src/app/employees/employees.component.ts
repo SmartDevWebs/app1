@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
+  getSearchValueFromChild:string=''
+
 myEmployees:employeeInfo[]=[]
   constructor(public apiCaller:HttpClient,public auth :AuthService,public router :Router) { }
 
@@ -60,5 +62,7 @@ this
    }
 })
 }
-  
+getHandleClickSearchValue(sear:string){
+  this.getSearchValueFromChild=sear
+}
 }
