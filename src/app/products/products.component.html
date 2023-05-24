@@ -4,7 +4,7 @@
     [all]="getTotalProductsLength()"
     [tv]="getTotalTv()"
     [laptop]="getTotalLaptop()"
-    [phone]="getTotalPhone()"
+    [mobile]="getTotalPhone()"
     [refrigerator]="getTotalRef()"
     [washmachine]="getTotalWashmachine()"
     (filterRadioBtnSelectedChange)="productsRadioBtnChange($event)"
@@ -19,6 +19,8 @@
         [price]="a.price"
         [img]="a.image"
         [id]="a.id"
+        
+        [filterValue]=productsKindSelected
         >
     <div ></div>
     

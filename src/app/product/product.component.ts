@@ -15,8 +15,7 @@ export class ProductComponent implements OnInit {
   @Input() avail:string=''
   @Input() img:string=''
   @Input() id:number=0
-
-  word :string='iphone x'
+  @Input() filterValue:string=''
 
 
 
